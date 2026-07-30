@@ -1,0 +1,29 @@
+{
+  "name": "ai-resume-tailor-server",
+  "version": "1.0.0",
+  "description": "Full-stack AI Resume Tailoring backend service",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.8",
+    "bcryptjs": "^2.4.3",
+    "cheerio": "^1.0.0-rc.12",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "docx": "^8.5.0",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mammoth": "^1.7.0",
+    "mongoose": "^8.3.1",
+    "multer": "^1.4.5-lts.1",
+    "openai": "^4.33.0",
+    "pdf-parse": "^1.1.1",
+    "pdfkit": "^0.15.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
