@@ -1,4 +1,4 @@
-const API_BASE = '/api';
+const API_BASE = `${import.meta.env.VITE_API_URL}/api`;
 
 const getHeaders = (isMultipart = false) => {
   const token = localStorage.getItem('token');
@@ -154,6 +154,9 @@ export const api = {
   },
 
   // Export URLs
-  getPDFExportUrl: (id, templateId = 'modern') => `/api/export/pdf/${id}?template=${templateId}`,
-  getDOCXExportUrl: (id) => `/api/export/docx/${id}`
+ getPDFExportUrl: (id, templateId = "modern") =>
+  `${API_BASE}/export/pdf/${id}?template=${templateId}`,
+
+getDOCXExportUrl: (id) =>
+  `${API_BASE}/export/docx/${id}`
 };
